@@ -25,12 +25,12 @@ describe('CompareNumber',function() {
     });
 
     var answerThree = '9527';
-    var inputThree = '9752';
+    var inputThree = '7259';
 
-    it('should print 1A3B',function() {
+    it('should print 0A4B',function() {
         var result = CompareNumber.compare(answerThree, inputThree);
 
-        expect(result).toBe('1A3B');
+        expect(result).toBe('0A4B');
     });
     var answerFour = '9527';
     var inputFour = '1346';
