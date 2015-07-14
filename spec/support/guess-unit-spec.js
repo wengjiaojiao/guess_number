@@ -11,13 +11,13 @@ describe('Guess', function() {
         var input;
 
         beforeEach(function() {
+            spyOn(answerGenerator.prototype, "randomNumberGetter").and.callFake(function() {
+                return returnRandomNumber;
+            });
             spyOn(compareNumber, "compare").and.callFake(function(value) {
                 if(value === input) {
                     return returnCompareNumber;
                 }
-            });
-            spyOn(answerGenerator.prototype, "randomNumberGetter").and.callFake(function() {
-                return returnRandomNumber;
             });
         });
 
