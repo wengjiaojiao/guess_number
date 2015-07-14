@@ -6,7 +6,7 @@
 var compareNumber = require('../../src/model/compareNumber');
 
 describe('compareNumber',function() {
-    describe('compare', function() {
+    describe('.compare()', function() {
         var answerOne = '9527';
         var inputOne= '9527';
 
