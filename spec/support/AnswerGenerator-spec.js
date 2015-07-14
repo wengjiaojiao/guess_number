@@ -1,6 +1,6 @@
 'use strict';
 
-var AnswerGenerator = require('../../src/model/AnswerGenerator');
+var answerGenerator = require('../../src/model/answerGenerator');
 
 describe('AnswerGenerator', function() {
     var returnValue;
@@ -15,16 +15,16 @@ describe('AnswerGenerator', function() {
     it('should print 1597', function() {
         returnValue = [0.123,0.532,0.963,0.738];
         i = 0;
-        var result = new AnswerGenerator();
+        var result = new answerGenerator();
 
-        expect(result.RandomNumberGetter()).toBe("1597");
+        expect(result.randomNumberGetter()).toBe("1597");
     });
 
     it('should print 0579', function() {
         returnValue = [0.023,0.532,0.532,0.738,0.963];
         i = 0;
-        var result = new AnswerGenerator();
+        var result = new answerGenerator();
 
-        expect(result.RandomNumberGetter()).toBe("0579");
+        expect(result.randomNumberGetter()).toBe("0579");
     });
 });
