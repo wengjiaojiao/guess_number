@@ -4,7 +4,7 @@ var AnswerGenerator = require('../../src/model/AnswerGenerator');
 
 describe('AnswerGenerator', function() {
     var returnValue;
-    var i = -1;
+    var i;
 
     beforeEach(function() {
        spyOn(Math,"random").and.callFake(function() {
@@ -12,12 +12,19 @@ describe('AnswerGenerator', function() {
        });
     });
 
-
     it('should print 1597', function() {
         returnValue = [0.123,0.532,0.963,0.738];
-        i ++;
-        var result = AnswerGenerator.RandomNumberGetter();
+        i = 0;
+        var result = new AnswerGenerator();
 
-        expect(result).toBe("1597");
+        expect(result.RandomNumberGetter()).toBe("1597");
+    });
+
+    it('should print 0579', function() {
+        returnValue = [0.023,0.532,0.532,0.738,0.963];
+        i = 0;
+        var result = new AnswerGenerator();
+
+        expect(result.RandomNumberGetter()).toBe("0579");
     });
 });
