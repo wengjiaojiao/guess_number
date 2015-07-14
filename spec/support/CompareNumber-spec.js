@@ -3,14 +3,14 @@
  */
 'use strict';
 
-var CompareNumber = require('../../src/model/CompareNumber');
+var compareNumber = require('../../src/model/compareNumber');
 
-describe('CompareNumber',function() {
+describe('compareNumber',function() {
     var answerOne = '9527';
     var inputOne= '9527';
 
     it('should print 4A0B',function() {
-      var result = CompareNumber.compare(answerOne, inputOne);
+      var result = compareNumber.compare(answerOne, inputOne);
 
       expect(result).toBe('4A0B');
     });
@@ -19,7 +19,7 @@ describe('CompareNumber',function() {
     var inputTwo = '9725';
 
     it('should print 2A2B',function() {
-        var result = CompareNumber.compare(answerTwo, inputTwo);
+        var result = compareNumber.compare(answerTwo, inputTwo);
 
         expect(result).toBe('2A2B');
     });
@@ -28,7 +28,7 @@ describe('CompareNumber',function() {
     var inputThree = '7259';
 
     it('should print 0A4B',function() {
-        var result = CompareNumber.compare(answerThree, inputThree);
+        var result = compareNumber.compare(answerThree, inputThree);
 
         expect(result).toBe('0A4B');
     });
@@ -36,7 +36,7 @@ describe('CompareNumber',function() {
     var inputFour = '1346';
 
     it('should print 0A0B',function() {
-        var result = CompareNumber.compare(answerFour, inputFour);
+        var result = compareNumber.compare(answerFour, inputFour);
 
         expect(result).toBe('0A0B');
     });

@@ -3,12 +3,12 @@
  */
 'use strict';
 
-function CompareNumber() {
+function compareNumber() {
 
 }
 
 
-CompareNumber.compare = function(answer, input) {
+compareNumber.compare = function(answer, input) {
     var numberA = 0;
     var numberB = 0;
 
@@ -25,4 +25,4 @@ CompareNumber.compare = function(answer, input) {
 }
 
 
-module.exports = CompareNumber;
+module.exports = compareNumber;

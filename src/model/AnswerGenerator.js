@@ -3,11 +3,11 @@
  */
 'use strict';
 
-function AnswerGenerator() {
+function answerGenerator() {
     this.mathCollection = "";
 }
 
-AnswerGenerator.prototype.RandomNumberGetter = function () {
+answerGenerator.prototype.randomNumberGetter = function () {
     var number = 0;
 
     var collectionLength = 4;
@@ -21,4 +21,4 @@ AnswerGenerator.prototype.RandomNumberGetter = function () {
     return this.mathCollection;
 }
 
-module.exports = AnswerGenerator;
+module.exports = answerGenerator;
