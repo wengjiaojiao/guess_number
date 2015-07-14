@@ -3,7 +3,7 @@
 var Guess = require('../../src/model/Guess');
 
 describe('Guess', function() {
-    describe('#guessNumber', function() {
+    describe('#guessNumber()', function() {
         beforeEach(function() {
             spyOn(Math, "random").and.callFake(function() {
             return "1234";
