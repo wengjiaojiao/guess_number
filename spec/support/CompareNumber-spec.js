@@ -32,4 +32,12 @@ describe('CompareNumber',function() {
 
         expect(result).toBe('1A3B');
     });
+    var answerFour = '9527';
+    var inputFour = '1346';
+
+    it('should print 0A0B',function() {
+        var result = CompareNumber.compare(answerFour, inputFour);
+
+        expect(result).toBe('0A0B');
+    });
 });
