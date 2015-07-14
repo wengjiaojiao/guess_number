@@ -4,21 +4,21 @@
 'use strict';
 
 function AnswerGenerator() {
-    
+    this.mathCollection = "";
 }
 
-AnswerGenerator.RandomNumberGetter = function () {
+AnswerGenerator.prototype.RandomNumberGetter = function () {
     var number = 0;
-    var mathCollection = "";
+
     var collectionLength = 4;
 
-    while(mathCollection.length < collectionLength) {
+    while(this.mathCollection.length < collectionLength) {
         number = Math.floor(Math.random() * 10);
-        if(mathCollection.indexOf(number) === -1) {
-            mathCollection += number;
+        if(this.mathCollection.indexOf(number) === -1) {
+            this.mathCollection += number;
         }
     }
-    return mathCollection;
+    return this.mathCollection;
 }
 
 module.exports = AnswerGenerator;
