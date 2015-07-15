@@ -4,7 +4,7 @@
 'use strict';
 
 function answerGenerator() {
-    this.mathCollection = "";
+    this.mathCollection = '';
 }
 
 answerGenerator.prototype.randomNumberGetter = function () {

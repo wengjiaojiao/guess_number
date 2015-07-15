@@ -14,6 +14,7 @@ describe('Guess', function() {
             spyOn(answerGenerator.prototype, 'randomNumberGetter').and.callFake(function() {
                 return returnRandomNumber;
             });
+            
             spyOn(compareNumber, 'compare').and.callFake(function(input) {
                 if(input === '9527') {
                     return returnCompareNumber;

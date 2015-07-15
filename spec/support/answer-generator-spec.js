@@ -8,7 +8,7 @@ describe('answerGenerator', function() {
         var i;
 
         beforeEach(function() {
-           spyOn(Math,"random").and.callFake(function() {
+           spyOn(Math,'random').and.callFake(function() {
                 return returnValue[i++];
            });
         });
@@ -18,7 +18,7 @@ describe('answerGenerator', function() {
             i = 0;
             var result = new answerGenerator();
 
-            expect(result.randomNumberGetter()).toBe("1597");
+            expect(result.randomNumberGetter()).toBe('1597');
         });
 
         it('give repeat number should print 0579', function() {
@@ -26,7 +26,7 @@ describe('answerGenerator', function() {
             i = 0;
             var result = new answerGenerator();
 
-            expect(result.randomNumberGetter()).toBe("0579");
+            expect(result.randomNumberGetter()).toBe('0579');
         });
     });
 });
