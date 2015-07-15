@@ -1,9 +1,10 @@
+
 {
   "name": "guessnumber",
   "version": "1.0.0",
   "scripts": {
     "start": "node app.js --use_strict",
-    "test": "jasmine"
+    "test": "istanbul cover --include-all-sources jasmine ./spec/support/*-spec.js"
   },
   "dependencies": {
     "jasmine": "^2.3.1"

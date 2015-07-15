@@ -1,5 +1,5 @@
-var answerGenerator = require('./answerGenerator');
-var compareNumber = require('./compareNumber');
+var answerGenerator = require('./answer-generator');
+var compareNumber = require('./compare-number');
 
 function Guess() {
     this.answer = new answerGenerator().randomNumberGetter();

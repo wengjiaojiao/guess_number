@@ -1,8 +1,8 @@
 'use strict';
 
-var Guess = require('../../src/model/Guess');
-var compareNumber = require('../../src/model/compareNumber');
-var answerGenerator = require('../../src/model/answerGenerator');
+var Guess = require('../../src/model/guess');
+var compareNumber = require('../../src/model/compare-number');
+var answerGenerator = require('../../src/model/answer-generator');
 
 describe('Guess', function() {
     describe('#guessNumber()', function() {

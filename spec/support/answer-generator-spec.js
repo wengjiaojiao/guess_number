@@ -1,6 +1,6 @@
 'use strict';
 
-var answerGenerator = require('../../src/model/answerGenerator');
+var answerGenerator = require('../../src/model/answer-generator');
 
 describe('answerGenerator', function() {
     describe('#randomNumberGetter()', function() {

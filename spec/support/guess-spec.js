@@ -1,6 +1,6 @@
 'use strict';
 
-var Guess = require('../../src/model/Guess');
+var Guess = require('../../src/model/guess');
 
 describe('Guess', function() {
     describe('#guessNumber()', function() {
